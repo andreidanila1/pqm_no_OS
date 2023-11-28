@@ -1,0 +1,24 @@
+{
+        "configurations": [
+                {
+                        "showDevDebugOutput": true,
+                        "name": "Maxim Debug",
+                        "type": "cortex-debug",
+                        "request": "launch",
+                        "program": "/home/andrei/git_repositories/no-OS/projects/pqm_iio/build/pqm_iio.elf",
+                        "servertype": "openocd",
+                        "serverpath": "/home/andrei/MaximSDK/Libraries/../Tools/OpenOCD/openocd",
+                        "cwd": "/home/andrei/MaximSDK/Libraries/../Tools/OpenOCD/scripts",
+                        "device": "cmsis-dap",
+                        "armToolchainPath": "/home/andrei/MaximSDK/Tools/GNUTools/10.3/bin",
+                        "executable": "/home/andrei/git_repositories/no-OS/projects/pqm_iio/build/pqm_iio.elf",
+                        "preLaunchTask": "Maxim Build",
+                        "configFiles": [
+                                "interface/cmsis-dap.cfg",
+                                "target/max32650.cfg"
+                        ],
+                        "runToEntryPoint": "main",
+                        "svdFile": "/home/andrei/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX32650/Include/max32650.svd"
+                }
+        ]
+}

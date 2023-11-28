@@ -1,0 +1,7 @@
+{
+	"maxim": {
+		"pqm_static_ip": {
+		  "flags" : "RELEASE=y NO_OS_STATIC_IP=y"
+		}
+	  }
+}
